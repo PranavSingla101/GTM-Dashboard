@@ -60,8 +60,6 @@ The solution has four layers: data generation (`db/seed.py`), transformation/met
 - Manual append script:
   - `gtmvenv\Scripts\python ingestion/live_append.py --count 3`
 
-## Trade-Offs
-SQLite is used instead of Postgres because the project runs entirely locally with no external services. The data generator replaces a CRM API integration because Salesforce/HubSpot API rate limits and OAuth setup would add days of work without changing the analytical value demonstrated.
 
 ## Future Improvements
 - Replace mock generator with Salesforce, HubSpot, or Apollo API ingestion.
